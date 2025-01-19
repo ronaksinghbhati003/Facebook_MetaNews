@@ -1,0 +1,810 @@
+*{
+    padding:0px;
+    margin:0px;
+    list-style: none;
+    text-decoration: none;
+    list-style:none;
+    font-family: "Poppins", serif;
+}
+#header{
+    width:100%;
+    background-color:white;
+    box-shadow:0px 5px 5px 0px gray;
+    padding:20px 0px;
+    position: sticky;
+    top:0%;
+    z-index: 1;
+    background-color: white;
+    
+}
+.header-main{
+    max-width:1370px;
+    margin:auto;
+    /*border: 0.2px solid black;*/
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap:10%;
+    
+
+}
+.header-right{
+    flex-basis: 55%;
+    display: flex;
+    align-items: center;
+    gap:50px;
+    /*border: 0.2px solid black;*/
+}
+.logo{
+    font-size: 30px;
+    display: flex;
+    gap:10px;
+}
+.menu{
+    font-size:14px;
+}
+.menu>ul{
+    display: flex;
+    gap:30px;
+}
+.menu>ul>li>span>a{
+    color:black;
+}
+.menu>ul>li>span{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    position: relative;
+}
+.shop:hover .effect{
+    left:0%;
+    width:100%;
+}
+.technologies:hover .effect{
+    left:0%;
+    width:100%;
+}
+.build:hover .effect{
+    left:0%;
+    width:100%;
+}
+.about:hover .effect{
+    left:0%;
+    width:100%;
+}
+.menu>ul>li:hover >span>img{
+    transform: rotate(-90deg);
+}
+.menu>ul>li>span>img{
+    transform: rotate(90deg);
+    transition: 1s;
+}
+.header-left{
+    flex-basis: 40%;
+   /* border:0.5px solid black;*/
+   display: flex;
+   align-items: center;
+}
+.support{
+    padding:10px 20px;
+    margin-left:300px;
+}
+.inner>img{
+    transition: 0.5s;
+}
+.inner{
+    position: relative;
+}
+.inner:hover .effect{
+    left:0%;
+    width:100%;
+}
+.support:hover .inner>img{
+    transform: rotate(-90deg);
+}
+.support>span>img{
+    margin-left:5px;
+    transform:rotate(90deg);
+}
+.search{
+     margin-left:20px;
+    border-left:1px solid gray;
+    padding:10px 0px;
+    padding-left:20px;
+}
+.li1-dropmenu{
+    width:100%;
+    position:absolute;
+    top:100%;
+    box-shadow: 0px 5px 5px 0px gray;
+    left:0%;
+    background-color: white;
+    /*border: 0.2px solid black;*/
+    transform: scaleY(0);
+    transition-duration: 1s;
+    transition-property: transform scaleY(1);
+    transform-origin: top;
+
+}
+.li1:hover .li1-dropmenu{
+    transform: scaleY(1);
+}
+.dropmenu-pic{
+    display: flex;
+    margin:20px 0px;
+}
+.dropmenuList{
+    display: flex;
+}
+.li1-dropmenu-left{
+    margin:10px 80px;
+    font-weight: bold;
+}
+.li1-dropmenu-left>li{
+    margin-bottom: 15px;
+}
+.li1-dropmenu-left>li>span{
+   
+    position: relative;
+}
+.effect{
+    width:0%;
+    right: 0px;
+    height: 2px;
+    background-color: blue;
+    position: absolute;
+    transform:scale(1);
+    transition: 1s;
+    top:100%;
+    
+}
+.li1-dropmenu-left>li>span:hover .effect{
+    left:0px;
+    width:100%;
+}
+
+.li1-dropmenu-left>h3{
+    color:gray;
+    word-spacing: 5px;
+    font-size:18px;
+    margin-bottom: 20px;
+}
+.li1-dropmenu-right>h3{
+    margin:13px 0px;
+    font-size:18px;
+    color:gray;
+    word-spacing:5px;
+}
+.li1-dropmenu-right>li{
+    margin-bottom:15px;
+}
+.li1-dropmenu-right>li>span{
+    font-weight: bold;
+    position: relative;
+}
+.li1-dropmenu-right>li:hover .effect{
+    left:0px;
+    width:100%;
+}
+.li2-dropmenu{
+    position: absolute;
+    width:100%;
+    top:100%;
+    left:0%;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px gray;
+    padding:0px 50px;
+    padding-top:50px;
+    padding-bottom: 100px;
+    transform: scaleY(0);
+    transition: 0.5s;
+    transform-origin: top;
+}
+.li2:hover .li2-dropmenu{
+    transform: scaleY(1);
+}
+.li2dropmenulist{
+    display: flex;
+    gap:100px;
+}
+.li2dropmenulist>ul>h3{
+    margin:20px 0px;
+    font-size:18px;
+    color:gray;
+    word-spacing: 5px;
+}
+.li2dropmenulist>ul>li{
+    margin-bottom:10px;
+}
+.li2dropmenulist>ul>li>span{
+    
+    font-weight: bold;
+    position: relative;
+}
+.li2dropmenulist>ul>li:hover .effect{
+    left:0px;
+    width:100%;
+}
+.li3-dropmenu{
+    width:100%;
+    position: absolute;
+    top:100%;
+    left:0px;
+    padding-left:50px;
+    box-sizing: border-box;
+    padding-top:50px;
+    padding-bottom: 100px;
+    transform:scaleY(0);
+    transform-origin: top;
+    box-shadow: 0px 5px 5px 0px gray;
+    background-color: white;
+    transition: 0.5s;
+}
+.li3dropmenu{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap:30px;
+    font-weight: bold;
+}
+.li3:hover .li3-dropmenu{
+    transform: scaleY(1);
+}
+.li3dropmenu>div>span{
+    position: relative;
+}
+
+.li3dropmenu>div>span:hover .effect{
+    left:0px;
+    width:100%;
+}
+.li4-dropmenu{
+    display: flex;
+    position: absolute;
+    top:100%;
+    left:0%;
+    width:100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    background-color: white;
+    padding:50px 50px;
+    box-shadow: 0px 5px 5px 0px gray;
+    box-sizing: border-box;
+    gap:100px;
+    transition: 0.5s;
+}
+.li4:hover .li4-dropmenu{
+    transform: scaleY(1);
+}
+.li4-dropmenu>ul>li{
+    margin-bottom: 15px;
+}
+.li4-dropmenu>ul>li>span{
+    position: relative;
+    font-weight: bold;
+}
+.li4-dropmenu>ul>li:hover .effect{
+    left:0%;
+    width:100%;
+}
+.li5-dropmenu{
+    display: flex;
+    position: absolute;
+    top:100%;
+    left:0%;
+    background-color: white;
+    width:calc(100% - 100px);
+    box-shadow: 0px 5px 5px 0px gray;
+    padding:50px 50px;
+    gap:100px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.5s;
+}
+.li5-dropmenu>ul>h3{
+    color:gray;
+    margin-bottom:20px;
+    word-spacing: 5px;
+}
+.li5-dropmenu>ul>li{
+    margin-bottom:15px;
+}
+.li5-dropmenu>ul>li>span{
+    font-weight: bold;
+    
+    position: relative;
+}
+.li5-dropmenu>ul>li>span:hover .effect{
+    left:0%;
+    width:100%;
+}
+.support:hover .li5-dropmenu{
+    transform: scaleY(1);
+}
+#mid-content{
+    width:100%;
+    background-color:white;
+    padding:50px 0px;
+}
+#mid-content>h2{
+   max-width:1370px;
+    margin:auto;
+    /*border:0.2px solid black;*/
+    font-size:40px;
+    color:black;
+    font-weight:400;
+    letter-spacing: 5px;
+}
+#mid-content>h3{
+    max-width:1370px;
+    margin:20px auto;
+    color:black;
+    font-size: 30px;
+    font-weight:400;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+   /* border:0.2px solid black;*/
+}
+.main{
+    max-width:1370px;
+    margin:auto;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:50px;
+    margin-top:30px;
+}
+
+
+.gif-image>img{
+    width:100%;
+}
+.main-right-content>h3{
+    margin:20px 0px;
+}
+.main-right-content>h3>span{
+    border-bottom: 2px solid blue;
+    padding:5px 0px;
+    color:black; 
+    font-weight: 400;
+    font-size:25px;
+}
+.main-right-content>p{
+    font-size:40px;
+    font-weight:700;
+    margin:10px 0px;
+}
+.main-right-content>div{
+    font-size:18px;
+    line-height:30px;
+}
+.left1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    margin-bottom: 30px;;
+}
+.left1content{
+    
+    font-size:20px;
+}
+.left1content>h3>span{
+    border-bottom: 3px solid green;
+    padding:5px 0px;
+    font-weight:400;
+}
+.left1content>p{
+    font-size:25px;
+    font-weight: 700;
+    margin:10px 0px;
+}
+.left1content>div::after{
+    content:"January 14, 2025";
+    color:gray;
+    letter-spacing: 2px;
+    margin:10px 0px;
+}
+.left1img{
+    background-image: url("https://about.fb.com/wp-content/uploads/2025/01/WA-January-Bundle_Thumbnail.jpg?fit=1440%2C1080");
+    background-size:contain;
+    background-position: center;
+    transition: 1s;
+}
+.left1img:hover{
+    transform:scale(0.8,0.8);
+    border-radius: 50%;
+    border:5px solid black;
+    animation-name:move;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count: 1;
+}
+.left2{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    margin:20px 0px;
+}
+.left2content>h3>span{
+    font-size:20px;
+    font-weight:400;
+    padding:5px 0px;
+    border-bottom:3px solid blue;
+}
+.left2content>p{
+    margin:10px 0px;
+    font-weight:700;
+    font-size:25px;
+}
+.left2content>div{
+    font-size:20px;
+}
+.left2content>div::after{
+    content: "January 13, 2025";
+    color:gray;
+    letter-spacing: 2px;
+}
+.left2img{
+    background-image: url("https://about.fb.com/wp-content/uploads/2025/01/Healthcare-Open-Source-AI-Use-Cases_Thumbnail.gif?fit=960%2C720");
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    transition: 1s;
+
+}
+.left2img:hover{
+    transform: scale(0.8,0.8);
+    border-radius:50%;
+    border:5px solid black;
+    animation-name:move;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+}
+.left3{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+    margin:20px 0px;
+}
+.left3content>h3>span{
+    font-size: 20px;
+    font-weight: 400;
+    padding:5px 0px;
+   border-bottom: 3px solid blue;
+}
+.left3content>p{
+    font-size:25px;
+    font-weight: 700;
+    margin:10px 0px;
+
+}
+.left3content>div{
+    font-size:20px;
+}
+.left3content>div::after{
+    content: "January 7, 2025";
+    color:gray;
+    letter-spacing: 2px;
+    display: block;
+    
+}
+.left3img{
+    background-image: url("https://about.fb.com/wp-content/uploads/2025/01/470051333_998877118935845_2799217930859203376_n.jpg?fit=1440%2C1080");
+    background-size:contain;
+    background-position: center;
+    transition: 1s;
+}
+@keyframes move{
+    0%{
+        transform: translateY(0px);
+    }
+    10%{
+        transform: translateY(-5px);
+    }
+    20%{
+        transform: translateY(0px);
+    }
+    30%{
+        transform: translateY(-5px);
+    }
+    40%{
+        transform: translateY(0px);
+    }
+
+}
+.left3img:hover{
+    transform: scale(0.8,0.8);
+    border-radius: 50%;
+    border:5px solid black;
+    animation-name:move;
+    animation-duration: 5s;
+    animation-timing-function:linear;
+    animation-iteration-count:1;
+}
+.mid-1{
+    width:100%;
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+}
+.mid-1-right{
+    background-color:#F1F2F4;
+    padding:80px 0px;
+}
+.mid-1-right-content{
+    margin:50px 100px;
+}
+.mid-1-right-content>h3>span{
+    font-size:20px;
+    font-weight:400;
+    padding:5px 0px;
+    border-bottom:2px solid blue;
+}
+.mid-1-right-content>p{
+    font-size:30px;
+    font-weight:700;
+    letter-spacing: 3px;
+    margin:20px 0px;
+}
+.mid-1-right-content>div{
+    color:gray;
+    letter-spacing: 2px;
+}
+.mid-1-right-content>div::after{
+    content: "December 27, 2024";
+    display: block;
+    font-size:16px;
+    margin-top:10px;
+
+}
+.mid-1-left>img{
+    width:100%;
+    height:100%;
+}
+.mid-2{
+    width: 100%;
+    padding:100px 0px;
+}
+.mid-2-main{
+    max-width:1370px;
+    margin:auto;
+    /*border:1px solid black;*/
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap:5%;
+    
+}
+
+.mid-2-right>h3{
+    font-weight:500;
+}
+.mid-2-right>h3::after{
+    content: "All stories";
+    font-size:14px;
+    display: block;
+    margin-top:10px;
+}
+.list{
+    margin:35px 0px;
+}
+.list>h3{
+     margin:10px 0px;
+     color:gray;
+     letter-spacing: 1px;
+}
+.list>li{
+    margin:5px 0px;
+}
+.list>li>a{
+    color:gray;
+}
+.list>li:hover a{
+    color:black;
+}
+.mid-2-left{
+     padding-bottom: 100px;
+}
+.mid-2-left1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:20px;
+}
+.mid-2-left-1-right>h3>span{
+   font-weight: 400;
+   font-size:20px;
+   padding-bottom: 2px;
+   position: relative;
+}
+.mid-2-left-1-right>h3>span::after{
+    content:"";
+    width:110px;
+    height:3px;
+    background: linear-gradient(to right, red, blue);
+    position: absolute;
+    top:100%;
+    left:0%;
+}
+.mid-2-left-1-right>p{
+    margin:10px 0px;
+    font-size:25px;
+    font-weight:700;
+}
+.mid-2-left-1-right>div{
+    margin-top:10px;
+}
+.mid-2-left-1-right>div::after{
+    content:"November 20, 2024";
+    margin:10px 0px;
+    display: block;
+    color:darkgray;
+}
+.mid-2-left-1-left{
+    overflow:hidden;
+}
+.mid-2-left-1-left>img{
+   /* background-image: url("https://about.fb.com/wp-content/uploads/2024/11/Messenger-Calling-Updates_Thumbnail-1.jpg?fit=1440%2C1080");*/
+    width:100%;
+    height:100%;
+    transition: 1s ease-in-out;
+}
+.mid-2-left-1-left>img:hover{
+    transform: scale(1.2,1.2);
+}
+.mid-2-left2{
+    margin:40px 0px;
+    display:grid;
+    grid-template-columns: 40% 60%;
+    gap:20px;
+}
+.mid-2-left2-right>h3>span{
+    font-weight:400;
+    border-bottom:3.5px solid blue;
+    padding:5px 0px;
+}
+.mid-2-left2-right>p{
+    font-weight:700;
+    font-size:25px;
+    margin:20px 0px;
+}
+.mid-2-left2-right>div::after{
+   content:"January 6, 2025";
+    display: block;
+    margin-top:10px;
+    color:darkgray;
+}
+.mid-2-left2-left{
+    overflow:hidden;
+}
+.mid-2-left2-left>img{
+    width:100%;
+    height:100%;
+    transition: 1s;
+}
+.mid-2-left2-left>img:hover{
+    transform: scale(1.2,1.2);
+}
+.mid-2-left3{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:20px;
+    margin-bottom: 60px;
+}
+.mid-2-left3-left>h3>span{
+    font-weight: 400;
+    padding:5px 0px;
+    border-bottom:3.5px solid darkorchid;
+}
+.mid-2-left3-left>p{
+    font-size:25px;
+    font-weight:700;
+    margin:20px 0px;
+}
+.mid-2-left3-left>div::after{
+    content:"December 10, 2024";
+    display: block;
+    color:darkgray;
+    margin-top:10px;
+}
+.mid-3{
+    width:100%;
+    padding:30px 0px;
+    background-color:#F1F2F4;
+}
+.mid-3-main{
+    max-width:1200px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin:auto;
+    align-items: center;
+}
+.item1{
+    font-weight: 500;
+    font-size:25px;
+}
+.item{
+    color:gray;
+    transition: 0.5s;
+}
+.item:hover{
+    filter: opacity(0.5);
+}
+.footer{
+    width:100%;
+    background-color: white;
+    padding:50px 0px;
+}
+.footer-main{
+    max-width:1370px;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footerlogo{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    font-size: 20px;
+}
+.socialmedia{
+    color:gray;
+    margin:20px 0px;
+    font-size:14px;
+}
+.handle{
+    display: flex;
+    font-size:25px;
+    color:black;
+    gap:20px;
+    margin:20px 0px;
+}
+.handle>i:hover {
+    opacity: 0.5;
+}
+.child2>ul{
+    margin-bottom: 20px;
+}
+.child2>ul>h3{
+    font-weight: 600;
+    color:black;
+    margin-bottom:20px;
+}
+.child2>ul>li{
+    margin:10px 0px;
+}
+.child2>ul>li>a{
+    color:black;
+    font-size:14px;
+}
+.child2>ul>li>a:hover {
+    opacity: 0.5;
+}
+.footerend{
+    max-width:1370px;
+    margin:auto;
+    display: flex;
+    margin-top:50px;
+}
+.footer-end-right{
+    flex-basis: 80%;
+    display: flex;
+    gap:60px;
+    font-size: 14px;
+}
+.footer-end-right>div>a>span{
+    color:black;
+}
+.footer-end-left{
+    flex-basis: 20%;
+    gap:5px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.footer-end-right>div>a>span:hover{
+    opacity: 0.5;;
+}
+.footer-end-left>a>span{
+    color:black;
+}
+.footer-end-left>a>span:hover{
+    opacity: 0.5;
+}
